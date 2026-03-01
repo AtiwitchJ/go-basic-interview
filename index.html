@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management</h1>
+
+    <div>
+        <button onclick="loadAllUsers()">ดึงข้อมูล Users ทั้งหมด</button>
+    </div>
+
+    <div>
+        <label>เลือก User:</label>
+        <select id="user-select" onchange="viewUser(this.value)">
+            <option value="">-- เลือก User --</option>
+        </select>
+    </div>
+
+    <div id="users-container">
+        <p>กดปุ่ม "ดึงข้อมูล Users ทั้งหมด" เพื่อแสดงข้อมูล</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
